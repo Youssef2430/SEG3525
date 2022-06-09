@@ -1,0 +1,24 @@
+index {
+	header
+	quotes
+	about
+	services
+	footer
+}
+
+appointment {
+	header
+	rendezvous -> information-> payment -> greeting
+	footer
+}
+
+header {
+	nav
+	locations
+}
+
+footer {
+	contacts
+	socials
+	copyright
+}
