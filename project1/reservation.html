@@ -37,6 +37,7 @@ border-radius: 10PX;
     border-color: #F1F1F1 !important;
     box-shadow: 0 0 0 0.2rem rgba(216,217,219,.5);
     color: #1b1f21;
+    height: 50x;
 
 }
 
@@ -45,7 +46,7 @@ border-radius: 10PX;
     position: relative;
     max-width: 400px; /*change as per your design need */
     min-width: 320px;
-    background: rgba(0 0 0 / 9%);
+    background: #4D663C;
     color: var(--calendar-font-color);
     margin: 20px auto;
     box-sizing: border-box;
@@ -133,7 +134,7 @@ border-radius: 10PX;
 }
 
 .calendar .calendar-inner .calendar-body .calendar-today {
-    background: #03a9f4;
+    background: #000000;
     border-radius: 4px;
 }
 
@@ -170,7 +171,7 @@ border-radius: 10PX;
 
 .calendar .calendar-inner .calendar-body .prev-dates,
 .calendar .calendar-inner .calendar-body .next-dates {
-    color: var(--calendar-prevnext-date-color);
+    color: #1b1f18;
 }
 
 .calendar .calendar-inner .calendar-body .prev-dates:hover,
@@ -392,14 +393,14 @@ border-radius: 10PX;
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#myPage">Cut It Out!</a>
+      <a class="navbar-brand" onclick='href = "./home.html"'>Cut It Out!</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#location">LOCATIONS</a></li>
         <li><a href="#reservation">RESERVATION</a></li>
-        <li><a href="#service">SERVICES</a></li>
-        <li><a href="#contact">CONTACT</a></li>
+        <li><a onclick='window.location.href = "./home.html#service"'>SERVICES</a></li>
+        <li><a onclick='window.location.href = "./home.html#contact"'>CONTACT</a></li>
       </ul>
     </div>
   </div>
@@ -418,21 +419,21 @@ border-radius: 10PX;
   <div class="row text-center slideanim">
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="./assets/toronto.png" alt="Toronto" width="400" height="300">
+        <img src="./assets/toronto.png" alt="Toronto" width="400" height="300" onclick='window.location.href = "./reservation.html#reservation"'>
         <p><strong>Toronto</strong></p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="./assets/montreal.png" alt="Montreal" width="400" height="300">
+        <img src="./assets/montreal.png" alt="Montreal" width="400" height="300" onclick='window.location.href = "./reservation.html#reservation"'>
         <p><strong>Montreal</strong></p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="./assets/ottawa.png" alt="Ottawa" width="400" height="300">
+        <img src="./assets/ottawa.png" alt="Ottawa" width="400" height="300" onclick='window.location.href = "./reservation.html#reservation"'>
         <p><strong>Ottawa</strong></p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
       </div>
@@ -495,7 +496,7 @@ border-radius: 10PX;
             
           
           </div>
-          <button class="btn-pay btn-block free-button">CONTINUER</button> 
+          <button class="btn-pay btn-block free-button" onclick='window.location.href = "./information.html#information"'>CONTINUER</button> 
         
     </div>
   </div>
@@ -504,7 +505,7 @@ border-radius: 10PX;
       <h2>Un peu plus sur nos employés</h2><br>
       
       <div class="col-sm-5">
-        <img src="./assets/about.png" alt="About" width="400" height="600">
+        <img src="./assets/staff.png" alt="About" width="500" height="400">
       </div>
       <div class="col-sm-7">
         <h2>Leur spécialités</h2><br>

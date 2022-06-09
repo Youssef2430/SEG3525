@@ -351,14 +351,14 @@ padding: 24px 1rem !important;
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#myPage">Cut It Out!</a>
+      <a class="navbar-brand" onclick='href = "./home.html"'>Cut It Out!</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#location">LOCATIONS</a></li>
-        <li><a href="#about">RESERVER</a></li>
-        <li><a href="#service">SERVICES</a></li>
-        <li><a href="#contact">CONTACT</a></li>
+        <li><a onclick='window.location.href = "./reservation.html#reservation"'>RESERVER</a></li>
+        <li><a onclick='window.location.href = "./home.html#service"'>SERVICES</a></li>
+        <li><a onclick='window.location.href = "./home.html#contact"'>CONTACT</a></li>
       </ul>
     </div>
   </div>
@@ -378,21 +378,21 @@ padding: 24px 1rem !important;
   <div class="row text-center slideanim">
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="./assets/toronto.png" alt="Toronto" width="400" height="300">
+        <img src="./assets/toronto.png" alt="Toronto" width="400" height="300" onclick='window.location.href = "./reservation.html#reservation"'>
         <p><strong>Toronto</strong></p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="./assets/montreal.png" alt="Montreal" width="400" height="300">
+        <img src="./assets/montreal.png" alt="Montreal" width="400" height="300" onclick='window.location.href = "./reservation.html#reservation"'>
         <p><strong>Montreal</strong></p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="./assets/ottawa.png" alt="Ottawa" width="400" height="300">
+        <img src="./assets/ottawa.png" alt="Ottawa" width="400" height="300" onclick='window.location.href = "./reservation.html#reservation"'>
         <p><strong>Ottawa</strong></p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
       </div>
@@ -401,154 +401,69 @@ padding: 24px 1rem !important;
   
   
 <!-- Container (About Section) -->
-<div id="about" class="container-fluid">
-    
-  
+<div id="information" class="container-fluid">
     <div class="row">
         <div class="container-payment d-flex justify-content-center mt-5 mb-5">
-
             <h2>Information</h2><br>
-
             <div class="row g-3">
-
               <div class="col-md-6">  
-                
-                
                 <div class="card">
-
-                  
-                    
-                    
-
                     <div class="card">
-                      
-
-                      
                         <div class="card-body payment-card-body">
-
                             <span class="font-weight-normal card-text">First Name</span>
                           <div class="input">
-
                             <i class="fa fa-credit-card"></i>
-                            <input type="text" class="form-control" placeholder="First Name">
-                            
+                            <input type="text" class="form-control" placeholder="First Name" required>
                           </div> 
-                          
                           <span class="font-weight-normal card-text">Last Name</span>
                           <div class="input">
-
                             <i class="fa fa-credit-card"></i>
-                            <input type="text" class="form-control" placeholder="Last Name">
-                            
+                            <input type="text" class="form-control" placeholder="Last Name" required>
                           </div> 
-
                           <span class="font-weight-normal card-text">Email</span>
                           <div class="input">
-
                             <i class="fa fa-credit-card"></i>
-                            <input type="text" class="form-control" placeholder="Email">
-                            
+                            <input type="text" class="form-control" placeholder="Email" required>
                           </div> 
-                            
-
-                          
-
-                         
-                        
                       </div>
                     </div>
-                    
                   </div>
-                  
-                
-
               </div>
               <div class="col-md-6">  
-                
-                
                 <div class="card">
-
-                  
-                    
-                    
-
                     <div class="card">
-                      
-
-                      
                         <div class="card-body payment-card-body">
-
-                           
-                          
-
                           <div class="row mt-3 mb-3">
-
                             <div class="col-md-2">
-
                               <span class="font-weight-normal card-text"></span>
                               <div class="input">
-
                                 <i class="fa fa-calendar"></i>
-                                <input type="text" class="form-control" style = "padding: 0%;" placeholder="+33">
-                                
+                                <input type="text" class="form-control" style = "padding: 0%;" placeholder="+1">
                               </div> 
-                              
                             </div>
-
-
                             <div class="col-md-10">
-
                               <span class="font-weight-normal card-text">Numero de téléphone</span>
                               <div class="input">
-
                                 <i class="fa fa-lock"></i>
-                                <input type="text" class="form-control" placeholder="(000) 000-0000">
-                                
+                                <input type="text" class="form-control" placeholder="(000) 000-0000" required>
                               </div> 
-                              
                             </div>
-
-                            
-
-                          
-
-                         
                         </div>
                         <hr class="mt-0 line">
                         <div class="d-flex justify-content-between mb-2">
-
-                          <button class="btn-pay btn-block free-button">Réserver & Payer</button> 
-                          
+                          <button class="btn-pay btn-block free-button" type="submit" onclick='window.location.href = "./payment.html#payment"'>Réserver & Payer</button> 
                         </div>
-
-
                       </div>
                     </div>
-                    
                   </div>
-                  
-                
-
               </div>
-              
-
-
-                    
-                  
               </div>
-              
             </div>
-            
-
           </div>
-    
   </div>
   
   
   
-
-
-
 
 <!-- Footer -->
 <footer class="text-center text-lg-start bg-light text-muted">
@@ -595,6 +510,8 @@ $(document).ready(function(){
     });
   });
 })
+
+
 </script>
 
 </body>

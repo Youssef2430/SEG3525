@@ -350,14 +350,14 @@ padding: 24px 1rem !important;
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#myPage">Cut It Out!</a>
+      <a class="navbar-brand" onclick='href = "./home.html"'>Cut It Out!</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#location">LOCATIONS</a></li>
-        <li><a href="#about">RESERVER</a></li>
-        <li><a href="#service">SERVICES</a></li>
-        <li><a href="#contact">CONTACT</a></li>
+        <li><a onclick='window.location.href = "./reservation.html#reservation"'>RESERVER</a></li>
+        <li><a onclick='window.location.href = "./home.html#service"'>SERVICES</a></li>
+        <li><a onclick='window.location.href = "./home.html#contact"'>CONTACT</a></li>
       </ul>
     </div>
   </div>
@@ -377,21 +377,21 @@ padding: 24px 1rem !important;
   <div class="row text-center slideanim">
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="./assets/toronto.png" alt="Toronto" width="400" height="300">
+        <img src="./assets/toronto.png" alt="Toronto" width="400" height="300" onclick='window.location.href = "./reservation.html#reservation"'>
         <p><strong>Toronto</strong></p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="./assets/montreal.png" alt="Montreal" width="400" height="300">
+        <img src="./assets/montreal.png" alt="Montreal" width="400" height="300" onclick='window.location.href = "./reservation.html#reservation"'>
         <p><strong>Montreal</strong></p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="./assets/ottawa.png" alt="Ottawa" width="400" height="300">
+        <img src="./assets/ottawa.png" alt="Ottawa" width="400" height="300" onclick='window.location.href = "./reservation.html#reservation"'>
         <p><strong>Ottawa</strong></p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
       </div>
@@ -400,157 +400,71 @@ padding: 24px 1rem !important;
   
   
 <!-- Container (About Section) -->
-<div id="about" class="container-fluid">
-    
-  
+<div id="payment" class="container-fluid">
     <div class="row">
         <div class="container-payment d-flex justify-content-center mt-5 mb-5">
-
             <h2>Paiement</h2><br>
-
             <div class="row g-3">
-
               <div class="col-md-6">  
-                
-                
                 <div class="card">
-
-                  
-                    
-                    
-
                     <div class="card">
-                      
-
-                      
                         <div class="card-body payment-card-body">
-
                             <span class="font-weight-normal card-text">Card Holder Name</span>
                           <div class="input">
-
                             <i class="fa fa-credit-card"></i>
                             <input type="text" class="form-control" placeholder="Name">
-                            
                           </div> 
-                          
                           <span class="font-weight-normal card-text">Card Number</span>
                           <div class="input">
-
                             <i class="fa fa-credit-card"></i>
                             <input type="text" class="form-control" placeholder="0000 0000 0000 0000">
-                            
                           </div> 
-
                           <div class="row mt-3 mb-3">
-
                             <div class="col-md-6">
-
                               <span class="font-weight-normal card-text">Expiry Date</span>
                               <div class="input">
-
                                 <i class="fa fa-calendar"></i>
                                 <input type="text" class="form-control" placeholder="MM/YY">
-                                
                               </div> 
-                              
                             </div>
-
-
                             <div class="col-md-6">
-
                               <span class="font-weight-normal card-text">CVC/CVV</span>
                               <div class="input">
-
                                 <i class="fa fa-lock"></i>
                                 <input type="text" class="form-control" placeholder="000">
-                                
                               </div> 
-                              
                             </div>
-                            
-
-                          
-
                           <span class="text-muted certificate-text"><i class="fa fa-lock"></i> Your transaction is secured with ssl certificate</span>
-                         
                         </div>
                       </div>
                     </div>
-                    
                   </div>
-                  
-                
-
               </div>
-
               <div class="col-md-6">
-                  
                   <hr class="mt-0 line">
                   <div class="card" >
-
                     <div class="btn-hld">
-
-                      
-                      
-                        <button type = "button" class="btn-apple btn-block"><img src="./assets/apple.svg" alt="Bootstrap" width="16" height="16" style="color: #fff;">Apple Pay</button>
-                        <button class="btn-apple btn-block"><img src="./assets/google.svg" alt="Bootstrap" width="16" height="16" style="color: #fff;">Google Pay</button>
-                        <button class="btn-paypal btn-block"><img src="./assets/paypal.svg" alt="Bootstrap" width="16" height="16" style="color: #fff;">Paypal</button>
-                      
-                      
+                        <button type = "button" class="btn-apple btn-block" onclick='window.location.href = "./congrats.html"'><img src="./assets/apple.svg" alt="Bootstrap" width="16" height="16" style="color: #fff;">Apple Pay</button>
+                        <button class="btn-apple btn-block" onclick='window.location.href = "./congrats.html"'><img src="./assets/google.svg" alt="Bootstrap" width="16" height="16" style="color: #fff;">Google Pay</button>
+                        <button class="btn-paypal btn-block" onclick='window.location.href = "./congrats.html"'><img src="./assets/paypal.svg" alt="Bootstrap" width="16" height="16" style="color: #fff;">Paypal</button>
                     </div>
-
                     <hr class="mt-0 line">
-
                     <div class="p-3">
-
                       <div class="d-flex justify-content-between mb-2">
-
-                        <button class="btn-pay btn-block free-button">Pay</button> 
-                        
+                        <button class="btn-pay btn-block free-button" onclick='window.location.href = "./congrats.html"'>Pay</button> 
                       </div>
-
-                      
-                      
-
                     </div>
-
                     <hr class="mt-0 line">
-
-
                     <div class="p-3 d-flex justify-content-between">
-
-                      
-
-                      
-
                     </div>
-
-
                     <div class="p-3">
-
-                    
-                   
-                      
                     </div>
-
-
-
-                    
                   </div>
               </div>
-              
             </div>
-            
-
           </div>
-    
   </div>
   
-  
-  
-
-
-
 
 <!-- Footer -->
 <footer class="text-center text-lg-start bg-light text-muted">

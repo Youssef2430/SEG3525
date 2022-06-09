@@ -206,7 +206,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#myPage">Cut It Out!</a>
+      <a class="navbar-brand" href="#header">Cut It Out!</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
@@ -219,7 +219,7 @@
   </div>
 </nav>
 
-<div class="jumbotron text-center">
+<div id= "header" class="jumbotron text-center">
   <h1>Cut It Out!</h1> 
   <p>Haircuts Design Culture</p> 
   
@@ -233,21 +233,21 @@
   <div class="row text-center slideanim">
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="./assets/toronto.png" alt="Toronto" width="400" height="300">
+        <img src="./assets/toronto.png" alt="Toronto" width="400" height="300" onclick='window.location.href = "./reservation.html#reservation"'>
         <p><strong>Toronto</strong></p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="./assets/montreal.png" alt="Montreal" width="400" height="300">
+        <img src="./assets/montreal.png" alt="Montreal" width="400" height="300" onclick='window.location.href = "./reservation.html#reservation"'>
         <p><strong>Montreal</strong></p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="./assets/ottawa.png" alt="Ottawa" width="400" height="300">
+        <img src="./assets/ottawa.png" alt="Ottawa" width="400" height="300" onclick='window.location.href = "./reservation.html#reservation"'>
         <p><strong>Ottawa</strong></p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
       </div>
@@ -295,7 +295,7 @@
         <h2>A propos de nous</h2><br>
         <h4>Malgrès qu’on soit dans l’industrie depuis 1998, nous cherchons toujours à innover et satisfaire nos clients en amenant un regard frais sur les barbiers et les coiffures des hommes.</h4><br>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, laboriosam illum quos odio adipisci facere illo, explicabo cum ullam in deserunt voluptas voluptatibus earum itaque. Sapiente numquam corrupti eaque ad.</p>
-        <br><button class="btn btn-default btn-lg">Contactez nous</button>
+        <br><button class="btn btn-default btn-lg" onclick='window.location.href = "#contact"'>Contactez nous</button>
       </div>
       <div class="col-sm-4">
         <img src="./assets/about.png" alt="About" width="400" height="600">
@@ -306,7 +306,7 @@
   <div class="container-fluid bg-grey">
     <div class="row">
       <div class="col-sm-5">
-        <img src="./assets/about.png" alt="About" width="400" height="600">
+        <img src="./assets/about2.png" alt="About" width="500" height="400">
       </div>
       <div class="col-sm-7">
         <h2>Our Values</h2><br>
@@ -339,7 +339,7 @@
         <div class="panel-footer">
           <h3>35$-60$</h3>
           
-          <button class="btn btn-lg">Réserver</button>
+          <button class="btn btn-lg" onclick='window.location.href = "./reservation.html"'>Réserver</button>
         </div>
       </div>      
     </div>     
@@ -358,7 +358,7 @@
         <div class="panel-footer">
           <h3>40$-70$</h3>
           
-          <button class="btn btn-lg">Réserver</button>
+          <button class="btn btn-lg" onclick='window.location.href = "./reservation.html"'>Réserver</button>
         </div>
       </div>      
     </div>       
@@ -375,7 +375,7 @@
         </div>
         <div class="panel-footer">
           <h3>75$-90$</h3>
-          <button class="btn btn-lg">Réserver</button>
+          <button class="btn btn-lg" onclick='window.location.href = "./reservation.html"'>Réserver</button>
         </div>
       </div>      
     </div>    
@@ -392,7 +392,7 @@
       <p><span class="glyphicon glyphicon-phone"></span> +00 8888888888</p>
       <p><span class="glyphicon glyphicon-envelope"></span> cutitout@contact.com</p>
     </div>
-    <div class="col-sm-7 slideanim">
+    <div class="col-sm-7">
       <div class="row">
         <div class="col-sm-6 form-group">
           <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
@@ -404,7 +404,7 @@
       <textarea class="form-control" id="comments" name="comments" placeholder="Message" rows="5"></textarea><br>
       <div class="row">
         <div class="col-sm-12 form-group">
-          <button class="btn btn-default pull-right" type="submit">Send</button>
+          <button id = "btn-submit" class="btn btn-default pull-right" type="submit">Send</button>
         </div>
       </div>
     </div>
@@ -457,6 +457,19 @@ $(document).ready(function(){
     });
   });
 })
+
+const btn = document.getElementById('btn-submit');
+
+btn.addEventListener('click', function handleClick(event) {
+  // 👇️ if you are submitting a form
+  event.preventDefault();
+
+  const inputs = document.querySelectorAll('#name, #email, #comments');
+
+  inputs.forEach(input => {
+    input.value = '';
+  });
+});
 </script>
 
 </body>
