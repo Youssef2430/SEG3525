@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
   <!-- Theme Made By www.w3schools.com -->
-  <title>Bootstrap Theme Company Page</title>
+  <title>Information</title>
+  <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -11,6 +12,168 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:weight@100;200;300;400;500;600;700;800&display=swap");
+
+
+
+
+.container-payment{
+
+ height: 100vh;
+
+}
+.btn-hld{
+    text-align: center;
+}
+
+.btn-pay{
+    height: 54px;
+    left: 709px;
+    top: 2934px;
+    border-radius: 10%;
+    background: #F1F1F1 !important;
+    border-color: #F1F1F1 !important;
+    box-shadow: 0 0 0 0.2rem rgba(216,217,219,.5);
+
+}
+
+.btn-apple {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 4px;
+    width: 300px;
+    height: 40.1px;
+    left: 753px;
+    top: 2803px;
+    text-align: center;
+    color: #212529 !important;
+    background: #fff !important;
+    border-radius: 35px;
+}
+
+.btn-paypal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 4px;
+    width: 300px;
+    height: 40.1px;
+    left: 753px;
+    top: 2803px;
+    text-align: center;
+    color: #F1F1F1 !important;
+    background: #FFC43A !important;
+    border-radius: 35px;
+    border: #FFC43A;
+}
+.card{
+
+ border: none;
+}
+
+.card-header {
+     padding: .5rem 1rem;
+     margin-bottom: 0;
+     background-color: rgba(0,0,0,.03);
+     border-bottom: none;
+ }
+
+ .btn-light:focus {
+     color: #212529;
+     background-color: #e2e6ea;
+     border-color: #dae0e5;
+     box-shadow: 0 0 0 0.2rem rgba(216,217,219,.5);
+ }
+
+ .form-control{
+
+   height: 50px;
+border: 2px solid #eee;
+border-radius: 6px;
+font-size: 14px;
+ }
+
+ .form-control:focus {
+color: #495057;
+background-color: #fff;
+border-color: #039be5;
+outline: 0;
+box-shadow: none;
+
+}
+
+.input{
+
+position: relative;
+}
+
+.input i{
+
+   position: absolute;
+top: 16px;
+left: 11px;
+color: #989898;
+}
+
+.input input{
+
+text-indent: 25px;
+}
+
+.card-text{
+
+font-size: 13px;
+margin-left: 6px;
+}
+
+.certificate-text{
+
+font-size: 12px;
+}
+
+
+.billing{
+font-size: 11px;
+}  
+
+.super-price{
+
+   top: 0px;
+font-size: 22px;
+}
+
+.super-month{
+
+   font-size: 11px;
+}
+
+
+.line{
+color: #bfbdbd;
+}
+
+.free-button{
+
+background: #bfbdbd;
+height: 52px;
+font-size: 15px;
+border-radius: 50px;
+}
+
+
+
+
+.payment-card-body{
+
+flex: 1 1 auto;
+padding: 24px 1rem !important;
+
+}
   body {
     font: 400 15px Lato, sans-serif;
     line-height: 1.8;
@@ -94,36 +257,18 @@
   .panel:hover {
     box-shadow: 5px 0px 40px rgba(0,0,0, .2);
   }
-  .panel-footer .btn:hover {
-    border: 1px solid #4D663C;
-    background-color: #fff !important;
-    color: #4D663C;
-  }
+
   .panel-heading {
     color: #fff !important;
     background-color: #4D663C !important;
-    padding: 25px;
+    padding: 0px;
     border-bottom: 1px solid transparent;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
   }
-  .panel-footer {
-    background-color: white !important;
-  }
-  .panel-footer h3 {
-    font-size: 32px;
-  }
-  .panel-footer h4 {
-    color: #aaa;
-    font-size: 14px;
-  }
-  .panel-footer .btn {
-    margin: 15px 0;
-    background-color: #4D663C;
-    color: #fff;
-  }
+
   .navbar {
     margin-bottom: 0;
     background-color: #4D663C;
@@ -148,7 +293,7 @@
   }
   footer .glyphicon {
     font-size: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     color: #4D663C;
   }
   .slideanim {visibility:hidden;}
@@ -211,7 +356,7 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#location">LOCATIONS</a></li>
-        <li><a href="#about">A PROPOS</a></li>
+        <li><a href="#about">RESERVER</a></li>
         <li><a href="#service">SERVICES</a></li>
         <li><a href="#contact">CONTACT</a></li>
       </ul>
@@ -257,62 +402,152 @@
   
 <!-- Container (About Section) -->
 <div id="about" class="container-fluid">
+    
+  
     <div class="row">
-      <div class="col-sm-8">
-        <h2>A propos de nous</h2><br>
-        <h4>Malgrès qu’on soit dans l’industrie depuis 1998, nous cherchons toujours à innover et satisfaire nos clients en amenant un regard frais sur les barbiers et les coiffures des hommes.</h4><br>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, laboriosam illum quos odio adipisci facere illo, explicabo cum ullam in deserunt voluptas voluptatibus earum itaque. Sapiente numquam corrupti eaque ad.</p>
-        <br><button class="btn btn-default btn-lg">Contactez nous</button>
-      </div>
-      <div class="col-sm-4">
-        <img src="./assets/about.png" alt="About" width="400" height="600">
-      </div>
-    </div>
+        <div class="container-payment d-flex justify-content-center mt-5 mb-5">
+
+            <h2>Information</h2><br>
+
+            <div class="row g-3">
+
+              <div class="col-md-6">  
+                
+                
+                <div class="card">
+
+                  
+                    
+                    
+
+                    <div class="card">
+                      
+
+                      
+                        <div class="card-body payment-card-body">
+
+                            <span class="font-weight-normal card-text">First Name</span>
+                          <div class="input">
+
+                            <i class="fa fa-credit-card"></i>
+                            <input type="text" class="form-control" placeholder="First Name">
+                            
+                          </div> 
+                          
+                          <span class="font-weight-normal card-text">Last Name</span>
+                          <div class="input">
+
+                            <i class="fa fa-credit-card"></i>
+                            <input type="text" class="form-control" placeholder="Last Name">
+                            
+                          </div> 
+
+                          <span class="font-weight-normal card-text">Email</span>
+                          <div class="input">
+
+                            <i class="fa fa-credit-card"></i>
+                            <input type="text" class="form-control" placeholder="Email">
+                            
+                          </div> 
+                            
+
+                          
+
+                         
+                        
+                      </div>
+                    </div>
+                    
+                  </div>
+                  
+                
+
+              </div>
+              <div class="col-md-6">  
+                
+                
+                <div class="card">
+
+                  
+                    
+                    
+
+                    <div class="card">
+                      
+
+                      
+                        <div class="card-body payment-card-body">
+
+                           
+                          
+
+                          <div class="row mt-3 mb-3">
+
+                            <div class="col-md-2">
+
+                              <span class="font-weight-normal card-text"></span>
+                              <div class="input">
+
+                                <i class="fa fa-calendar"></i>
+                                <input type="text" class="form-control" style = "padding: 0%;" placeholder="+33">
+                                
+                              </div> 
+                              
+                            </div>
+
+
+                            <div class="col-md-10">
+
+                              <span class="font-weight-normal card-text">Numero de téléphone</span>
+                              <div class="input">
+
+                                <i class="fa fa-lock"></i>
+                                <input type="text" class="form-control" placeholder="(000) 000-0000">
+                                
+                              </div> 
+                              
+                            </div>
+
+                            
+
+                          
+
+                         
+                        </div>
+                        <hr class="mt-0 line">
+                        <div class="d-flex justify-content-between mb-2">
+
+                          <button class="btn-pay btn-block free-button">Réserver & Payer</button> 
+                          
+                        </div>
+
+
+                      </div>
+                    </div>
+                    
+                  </div>
+                  
+                
+
+              </div>
+              
+
+
+                    
+                  
+              </div>
+              
+            </div>
+            
+
+          </div>
+    
   </div>
   
-  <div class="container-fluid bg-grey">
-    <div class="row">
-      <div class="col-sm-5">
-        <img src="./assets/about.png" alt="About" width="400" height="600">
-      </div>
-      <div class="col-sm-7">
-        <h2>Our Values</h2><br>
-        <h4><strong>MISSION:</strong> Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
-        <p><strong>VISION:</strong> Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div>
-    </div>
-  </div>
+  
   
 
-<!-- Container (Contact Section) -->
-<div id="contact" class="container-fluid bg-grey">
-  <h2 class="text-center">CONTACT</h2>
-  <div class="row">
-    <div class="col-sm-5">
-      <p>Envoyez nous un message et on vous répondra la plus tôt possible</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span> Toronto, ON</p>
-      <p><span class="glyphicon glyphicon-phone"></span> +00 8888888888</p>
-      <p><span class="glyphicon glyphicon-envelope"></span> cutitout@contact.com</p>
-    </div>
-    <div class="col-sm-7 slideanim">
-      <div class="row">
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-        </div>
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-        </div>
-      </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Message" rows="5"></textarea><br>
-      <div class="row">
-        <div class="col-sm-12 form-group">
-          <button class="btn btn-default pull-right" type="submit">Send</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+
 
 
 <!-- Footer -->
